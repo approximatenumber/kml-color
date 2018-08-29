@@ -47,7 +47,7 @@ class UploadHandler(tornado.web.RequestHandler):
             self.finish(answer)
             return
         answer = template.format('Hooray! Import this file to your MAPS.me app. <br />\
-                                  <a href=\"/download?file=%s\">Download</a>')
+                                  <a href=\"/download?file=%s\">Download</a>' % final_filename)
         self.finish(answer)
 
 

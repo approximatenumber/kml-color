@@ -44,7 +44,6 @@ for found_color in found_colors:
         idx = 0
     replace_dict[found_color] = available_colors[idx]
     idx += 1
-print(replace_dict)
 
 # replace found color to available one in xml
 for doc in root.getchildren():
@@ -58,6 +57,6 @@ for doc in root.getchildren():
                                                color_text))
                     if color:
                         child.text = '#placemark-{color}'.format(color=replace_dict[color])
-                        print('%s changed to %s' % (color, replace_dict[color]))
 
 e.write(sys.argv[1])
+print('File converted: %s' % sys.argv[1])
