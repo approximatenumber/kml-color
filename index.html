@@ -3,16 +3,21 @@
 <head> 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
 <title>Add colors to your KML-file for MAPS.me (exported from Google maps)</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 </head>
 <body>
 <center>
 <p><h2>This service adds a MAPS.me compatible colors to your KML-files exported from Google maps.</h2></p>
 <form enctype="multipart/form-data" action="/upload" method="post">
-File: <input type="file" name="file1" />
+<h3>Choose .KML file:<h3>
+<br />
+<input type="file" accept=".kml" name="file1" value="Choose file"/>
 <br />
 <br />
 <input type="submit" value="Upload" />
 </form>
+<small><a href='https://github.com/approximatenumber/kml-color'>Project on GitHub</a></small>
 </center>
 </body>
 </html>
