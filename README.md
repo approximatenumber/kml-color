@@ -1,7 +1,9 @@
-# kml-color
+# KML-Color
 ### Service to add MAPS.me compatible colors into exported KML-files from Google-maps
 
 ### Adds MAPS.me supported colors to KML file exported from Google Maps.
+
+#### Use [kivy-android](https://github.com/approximatenumber/kml-color/tree/kivy-android) branch to get some android stuff.
 
 ---
 
